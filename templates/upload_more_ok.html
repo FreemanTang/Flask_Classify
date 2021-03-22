@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href="{{url_for('static', filename='obj_classification.css')}}" rel="stylesheet" type="text/css" />
+		<title>图片识别</title>
+	</head>
+	<body>
+		<h1>图片识别</h1>
+		<div class="container">
+			<div class="choose">
+				<form action="" enctype='multipart/form-data' method='POST'>
+					<input type="file" multiple="" name="file[]" class="input-new" style="margin-top:20px;" />
+					<input type="submit" value="识别图片" class="button-new" style="margin-top:15px;" />
+				</form>
+			</div>
+			<div class="display">
+				<ul>
+					{% if filenames["bird"] %}
+						<div class="labels" style="width: 1024px;"><h2>bird</h2></div>
+					{% endif %}
+					{% for file in filenames["bird"] %}
+					<li><img src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% if filenames["butterfly"] %}
+						<div class="labels" style="width: 1024px;"><h2>butterfly</h2></div>
+					{% endif %}
+					{% for file in filenames["butterfly"] %}
+					<li><img src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% if filenames["cattle"] %}
+						<div class="labels" style="width: 1024px;"><h2>cattle</h2></div>
+					{% endif %}
+					{% for file in filenames["cattle"] %}
+					<li><img src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% if filenames["chicken"] %}
+						<div class="labels" style="width: 1024px;"><h2>chicken</h2></div>
+					{% endif %}
+					{% for file in filenames["chicken"] %}
+					<li><img src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% if filenames["elephant"] %}
+						<div class="labels" style="width: 1024px;"><h2>elephant</h2></div>
+					{% endif %}
+					{% for file in filenames["elephant"] %}
+					<li><img src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% if filenames["horse"] %}
+						<div class="labels" style="width: 1024px;"><h2>horse</h2></div>
+					{% endif %}
+					{% for file in filenames["horse"] %}
+					<li><img class="labels" src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% if filenames["phone"] %}
+						<div class="labels" style="width: 1024px;"><h2>phone</h2></div>
+					{% endif %}
+					{% for file in filenames["phone"] %}
+					<li><img src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% if filenames["sheep"] %}
+						<div class="labels" style="width: 1024px;"><h2>sheep</h2></div>
+					{% endif %}
+					{% for file in filenames["sheep"] %}
+					<li><img src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% if filenames["shoes"] %}
+						<div class="labels" style="width: 1024px;"><h2>shoes</h2></div>
+					{% endif %}
+					{% for file in filenames["shoes"] %}
+					<li><img src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% if filenames["spider"] %}
+						<div class="labels" style="width: 1024px;"><h2>spider</h2></div>
+					{% endif %}
+					{% for file in filenames["spider"] %}
+					<li><img src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% if filenames["book"] %}
+						<div class="labels" style="width: 1024px;"><h2>book</h2></div>
+					{% endif %}
+					{% for file in filenames["book"] %}
+					<li><img src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% if filenames["squirrel"] %}
+						<div class="labels" style="width: 1024px;"><h2>squirrel</h2></div>
+					{% endif %}
+					{% for file in filenames["squirrel"] %}
+					<li><img src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% if filenames["watch"] %}
+						<div class="labels" style="width: 1024px;"><h2>watch</h2></div>
+					{% endif %}
+					{% for file in filenames["watch"] %}
+					<li><img src="{{ url_for('uploaded_file', filename=file) }}" width="125" height="125">
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

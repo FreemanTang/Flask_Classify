@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link href="{{url_for('static', filename='obj_classification.css')}}" rel="stylesheet" type="text/css" />
+		<title>图片识别</title>
+	</head>
+	<body align="center">
+		<h1>图片识别</h1>
+		<div class="container">
+			<div class="choose">
+				<form action="" enctype='multipart/form-data' method='POST'>
+					<input type="file" multiple="" name="file[]" class="input-new" style="margin-top:20px;" />
+					<input type="submit" value="识别图片" class="button-new" style="margin-top:15px;" />
+				</form>
+			</div>
+			<div class="display">
+				<img src="{{ url_for('static', filename= path,_t=val1) }}" width="400" height="500" alt="图片" />
+			</div>
+		</div>
+	</body>
+</html>

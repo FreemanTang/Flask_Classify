@@ -1,0 +1,74 @@
+/*所有选择器*/
+* {
+	/*边距*/
+	margin: 0;
+	/*填充*/
+	padding: 0;
+}
+
+/*body选择器*/
+body {
+	/*居中*/
+	text-align: center;
+}
+/*.container类选择器*/
+.container {
+	max-width: 1024px;
+	/*div盒子宽度*/
+	margin: 0 auto;
+	/*边距*/
+}
+h1{
+	padding: 20px;
+}
+h2{
+	padding: 20px;
+}
+/*menu类选择器中的有序列表选择器*/
+li {
+	/*去掉列表的选项实心点*/
+	list-style: none;
+	/*使列表并排*/
+	float: left;
+}
+.display{
+	width: 1024px;
+	/*div盒子宽度*/
+	margin: 0 auto;
+	height: 480px;
+}
+.result{
+	width: 254px;
+	float: left;
+	/*div盒子宽度*/
+	margin: 0 auto;
+}
+.title_h2{
+	margin-bottom: 3px;
+}
+.resJson{
+	overflow:scroll;
+	overflow-x: hidden ;
+	width:254px;
+	height: 480px;
+}
+.choose{
+	background-color: black;
+	padding: 20px;
+	padding-bottom: 40px;
+	width: 980px;
+	float: left;
+	text-align: center;
+}
+.input-new{
+	font-size: 20px;
+	color: white;
+	
+}
+.button-new{
+	font-size: 20px;
+}
+.labels{
+	display: inline-block;
+	text-align: left;
+}
